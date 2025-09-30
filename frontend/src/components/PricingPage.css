@@ -1,0 +1,115 @@
+.pricing-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.version-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  background: rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.version-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.version-badge.blue {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.version-badge.green {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.test-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.test-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.test-btn.blue {
+  background: #3498db;
+  color: white;
+}
+
+.test-btn.green {
+  background: #2ecc71;
+  color: white;
+}
+
+.test-btn.default {
+  background: #95a5a6;
+  color: white;
+}
+
+.test-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.pricing-container {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pricing-header h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-header p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .version-info {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .test-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pricing-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
