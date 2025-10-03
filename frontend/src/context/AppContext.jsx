@@ -41,7 +41,7 @@ export const AppProvider = ({ children }) => {
         clearCookie: clearCookie
       });
       
-      const response = await axios.get('http://localhost:5000/api/pricing', config);
+      const response = await axios.get('https://intern-assign-zjov.onrender.com/api/pricing', config);
       
       console.log('✅ Received:', {
         version: response.data.version,
